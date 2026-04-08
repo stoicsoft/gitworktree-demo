@@ -1,0 +1,11 @@
+{
+  "name": "worktree-demo",
+  "version": "0.1.0",
+  "description": "Playground for 1DevTool worktree feature",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node src/test.js"
+  },
+  "license": "MIT"
+}
