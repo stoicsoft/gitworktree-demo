@@ -1,6 +1,14 @@
+const USERS = {
+  admin: 'secret',
+  alice: 'wonderland',
+  bob: 'builder',
+}
+
 function login(username, password) {
-  // TODO: real auth
-  return { ok: username === 'admin' && password === 'secret', token: 'fake-jwt' }
+  if (USERS[username] === password) {
+    return { ok: true, token: `token-for-${username}` }
+  }
+  return { ok: false, token: null, error: 'invalid credentials' }
 }
 
 function logout(token) {
